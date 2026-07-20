@@ -1,10 +1,5 @@
-import React from 'react'
-import Button from '../components/ui/Button'
-
 const Dashboard = () => {
-  return (
-    <div>Dashboard</div>
-  )
-}
+  return <h1 className='text-3xl font-bold'>Dashboard</h1>;
+};
 
-export default Dashboard
+export default Dashboard;
