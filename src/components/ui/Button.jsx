@@ -40,14 +40,14 @@ const buttonVariants = cva(
     },
   }
 )
-//here I change a button approach from 
-const  Button=({
+
+function Button({
   className,
   variant = "default",
   size = "default",
   asChild = false,
   ...props
-})=> {
+}) {
   const Comp = asChild ? Slot.Root : "button"
 
   return (
@@ -60,5 +60,4 @@ const  Button=({
   );
 }
 
-// export default { Button, buttonVariants }
-export default Button;
+export { Button, buttonVariants }
